@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "quizzie": "git+ssh://git@github.com/The-CodeINN/quizzie.git",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
