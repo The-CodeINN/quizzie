@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quizzieclient-deployment # Name of the deployment
+spec:
+  replicas: 1 # Number of replicas (instances) of your application
+  selector:
+    matchLabels:
+      app: quizzie
+  template:
+    metadata:
+      labels:
+        app: quizzie # Label to identify the application
+    spec:
+      containers:
+      - name: quizzieclient-container # Name of the container
+        image: jaykold/quizzieclientapp:v1 # Docker image to use
+        ports:
+        - containerPort: 3000 # Port your application listens on
+        env:
+        - name: BACKEND_URL
+          value: "$BACKEND_URL"
