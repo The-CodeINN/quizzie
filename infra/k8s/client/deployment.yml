@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: quizzie # Label to identify the application
+        app: quizzie-client # Label to identify the application
     spec:
       containers:
       - name: quizzieclient-container # Name of the container
