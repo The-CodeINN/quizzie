@@ -18,5 +18,7 @@ spec:
         ports:
         - containerPort: 3000 # Port your application listens on
         env:
+        - name: BIND_ADDRESS
+          value: "0.0.0.0"
         - name: BACKEND_URL
           value: "$BACKEND_URL"
