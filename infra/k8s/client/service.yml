@@ -4,7 +4,7 @@ metadata:
   name: quizzieclient-service # Name of the service
 spec:
   selector:
-    app: quizzie # Match the label defined in the deployment
+    app: quizzie-client # Match the label defined in the deployment
   ports:
     - name: http # Name for the first port
       protocol: TCP

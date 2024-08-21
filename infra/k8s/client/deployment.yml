@@ -6,7 +6,7 @@ spec:
   replicas: 1 # Number of replicas (instances) of your application
   selector:
     matchLabels:
-      app: quizzie
+      app: quizzie-client # Match the label defined in the service
   template:
     metadata:
       labels:
